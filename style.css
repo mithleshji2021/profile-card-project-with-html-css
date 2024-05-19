@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-card{
+    min-height: 210px;
+    width:320px ;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    height: 33%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(73, 70, 255);
+    border-radius: 24px 24px 0 0 ;
+}
+.image{
+    height: 120px;
+    width: 120px;   
+    position: relative;
+    top: 0;
+    margin-top: 15px;
+
+    
+}
+.profile-image{
+   
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 50%;
+    padding: 2px;
+    
+    cursor: pointer;
+}
+.profile-image:hover{
+    transform: scale(1.05);
+}
+.profile-text{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 14px;
+}
+.profile-text .name{
+    font-size: 19px;
+    font-weight: 600;
+
+}
+.profile-text .job{
+    font-size: 12px;
+    font-weight: 500;
+    
+    
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    height: 25px;
+   position: relative;
+   margin-top: 15px;
+    
+}
+.icons .link{
+    margin-top: px;
+    height: 25px;
+    width: 25px;
+    
+    margin: 10px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.link i{
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+}
+.buttons{
+    margin-top: 10px;
+    
+    
+}
+.buttons .button{
+    margin: 8px 10px;
+    border-radius: 24px;
+    padding: 5px;
+    width: 120px;
+    background-color: rgb(75, 100, 241);
+    color: white;
+    border: 0;
+    cursor: pointer;
+
+}
+.buttons .button:hover{
+    background-color: rgb(51, 16, 207);
+    transition: 0.3s ease-in ;
+}
+.reactions{
+    display: flex;
+    flex-direction: row;
+}
+.reaction{
+    display: flex;
+    align-items: center;
+ justify-content: center;
+    flex-direction: row;
+    margin: 15px 10px;
+    border-right: 2px solid rgb(212, 212, 212);
+    padding-right: 10px;
+    cursor: pointer;
+}
+.reaction:last-child{
+    border-right:none;
+
+}
+.reaction p{
+    margin: 0px 8px;
+}
+.reaction i{
+    margin-top: 4px;
+}
+
